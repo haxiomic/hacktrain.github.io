@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,29 +37,46 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>HackTrain</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#top"><img height="20px" src="img/logo-writing.png"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Our Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#partners">Partners</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#clients">Clients</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
     <!-- Header -->
@@ -97,7 +115,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Services</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
@@ -149,284 +167,12 @@
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Driving innovation within the rail industry. Together.</h1>
-        </div>
-    </aside>
-
-    <!-- Team -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Team</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                            <img class="team" src="img/team/river.jpg"/>
-                                <h4>
-                                    <strong>River Tamoor Baig</strong>
-                                </h4>
-                                <p>Chief Executive<br>Co-founder</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:river@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/RiverTam57"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/rivertam"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/team/alejandro.jpg"/>
-                                <h4>
-                                    <strong>Alejandro Saucedo</strong>
-                                </h4>
-                                <p>CTO<br>Co-founder</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:alejandro@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/AxSaucedo"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/axsaucedo"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                            <img class="team" src="img/team/mark.png"/>
-                                <h4>
-                                    <strong>Mark William Firth</strong>
-                                </h4>
-                                <p>Head of Operations<br>Founding Partner</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:mark@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/MarkWillFirth"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/markwilliamfirth"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/team/phoebe.jpg"/>
-                                <h4>
-                                    <strong>Phoebe Saucedo</strong>
-                                </h4>
-                                <p>Operations & Marketing</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:phoebe@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/PhoeYiin"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/phoebeyiin"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/team/damian.jpg"/>
-                                <h4>
-                                    <strong>Damian Kysely</strong>
-                                </h4>
-                                <p>Business Development</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:damian@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/DamianKys"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/damiankysely"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/team/sarah.jpg"/>
-                                <h4>
-                                    <strong>Sarah Chok</strong>
-                                </h4>
-                                <p>Business Analyst</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="mailto:sarah@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/dblchklt"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/sarah-chok-4600bb91"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <h2>Advisors</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                            <img class="team" src="img/advisors/toby.jpg"/>
-                                <h4>
-                                    <strong>Toby Stone</strong>
-                                </h4>
-                                <p>CEO<br>Newsquare Innovation</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://twitter.com/theonlytoby"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/tobiasstone"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/advisors/matt.jpg"/>
-                                <h4>
-                                    <strong>Matt Clifford</strong>
-                                </h4>
-                                <p>Chief Executive<br>Entrepreneur First</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://twitter.com/matthewclifford"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/mattcliffordef"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                              <img class="team" src="img/advisors/adil.png"/>
-                                <h4>
-                                    <strong>Adil Mohammed</strong>
-                                </h4>
-                                <p>CEO<br>SpotQA</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://twitter.com/adilmd"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/adilmd"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/projects/pointr/2.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/projects/vivacity/1.png">
-                                </a>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/projects/powermat/3.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/projects/sirenum/1.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/projects/igeolise/2.png">
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/projects/raildelay/2.png">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                <div class="col-lg-12 text-center"><br><br>
+                    <h2>Our Work</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -448,7 +194,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
+                        <img src="img/projects/vivacity/1.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -458,7 +204,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
+                        <img src="img/projects/powermat/3.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -468,7 +214,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
+                        <img src="img/projects/sirenum/1.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -478,7 +224,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
+                        <img src="img/projects/igeolise/2.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -488,95 +234,550 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
+                        <img src="img/projects/raildelay/2.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- modal pop-up -->
     <section>
-      <aside class="clients">
-          <div class="text-vertical-center">
-              <h2>We’ve joined forces with the the greatest organisations within the rail industry to drive forward innovation.</h2>
+
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Project Title</h2>
+                              <hr class="star-primary">
+                              <img src="img/projects/pointr/1.png" class="img-responsive img-centered" alt="">
+                              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                              <ul class="list-inline item-details">
+                                  <li>Client:
+                                      <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                      </strong>
+                                  </li>
+                                  <li>Date:
+                                      <strong><a href="http://startbootstrap.com">April 2014</a>
+                                      </strong>
+                                  </li>
+                                  <li>Service:
+                                      <strong><a href="http://startbootstrap.com">Web Development</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-      </aside>
+      </div>
+
+      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Project Title</h2>
+                              <hr class="star-primary">
+                              <img src="img/projects/pointr/2.png" class="img-responsive img-centered" alt="">
+                              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                              <ul class="list-inline item-details">
+                                  <li>Client:
+                                      <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                      </strong>
+                                  </li>
+                                  <li>Date:
+                                      <strong><a href="http://startbootstrap.com">April 2014</a>
+                                      </strong>
+                                  </li>
+                                  <li>Service:
+                                      <strong><a href="http://startbootstrap.com">Web Development</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/pointr/3.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/pointr/4.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/pointr/5.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/vivacity/1.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </section>
 
-  <section id="client-list" class="client-list">
-      <div id="client-list" class="container">
+
+  <!-- Together -->
+  <section>
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>Driving innovation within the rail industry. Together.</h1>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="team">
+      <div class="container">
           <div class="row text-center">
-              <div class="col-md-12">
-                  <h2 style="color:white">Our Partners</h2>
-                  <hr class="small" style="padding-bottom:30px">
-
+              <div class="col-lg-10 col-lg-offset-1"><br><br>
+                  <h2>Team</h2>
+                  <hr class="small">
                   <div class="row">
-                      <div class="col-md-4 col-md-12">
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                          <img class="client-list" src="img/partners/dft.png"/>
+                          <img class="team" src="img/team/river.jpg"/>
+                              <h4>
+                                  <strong>River Tamoor Baig</strong>
+                              </h4>
+                              <p>Chief Executive<br>Co-founder</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:river@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/RiverTam57"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/rivertam"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
-                      <div class="col-md-4 col-md-12">
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                            <img class="client-list" src="img/partners/hs2.png"/>
+                            <img class="team" src="img/team/alejandro.jpg"/>
+                              <h4>
+                                  <strong>Alejandro Saucedo</strong>
+                              </h4>
+                              <p>CTO<br>Co-founder</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:alejandro@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/AxSaucedo"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/axsaucedo"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
-                      <div class="col-md-4 col-md-12">
+
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                            <img class="client-list" src="img/partners/dbis.png"/>
+                          <img class="team" src="img/team/mark.png"/>
+                              <h4>
+                                  <strong>Mark William Firth</strong>
+                              </h4>
+                              <p>Head of Operations<br>Founding Partner</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:mark@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/MarkWillFirth"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/markwilliamfirth"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
                   </div>
 
                   <div class="row">
-                      <div class="col-md-4 col-md-12">
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                          <img class="client-list" src="img/partners/bae.png"/>
+                            <img class="team" src="img/team/phoebe.jpg"/>
+                              <h4>
+                                  <strong>Phoebe Saucedo</strong>
+                              </h4>
+                              <p>Operations & Marketing</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:phoebe@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/PhoeYiin"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/phoebeyiin"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
-                      <div class="col-md-4 col-md-12">
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                            <img class="client-list" src="img/partners/ey.png"/>
+                            <img class="team" src="img/team/damian.jpg"/>
+                              <h4>
+                                  <strong>Damian Kysely</strong>
+                              </h4>
+                              <p>Business Development</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:damian@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/DamianKys"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/damiankysely"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
-                      <div class="col-md-4 col-md-12">
+                      <div class="col-md-4 col-sm-12">
                           <div class="service-item">
-                            <img class="client-list" src="img/partners/oc.png"/>
+                            <img class="team" src="img/team/sarah.jpg"/>
+                              <h4>
+                                  <strong>Sarah Chok</strong>
+                              </h4>
+                              <p>Business Analyst</p>
+                              <ul class="list-inline">
+                                  <li>
+                                      <a href="mailto:sarah@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/dblchklt"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/sarah-chok-4600bb91"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <br>
+                  <h2>Advisors</h2>
+                  <hr class="small">
+                  <div class="row">
+                      <div class="col-md-4 col-sm-12">
+                          <div class="service-item">
+                          <img class="team" src="img/advisors/toby.jpg"/>
+                              <h4>
+                                  <strong>Toby Stone</strong>
+                              </h4>
+                              <p>CEO<br>Newsquare Innovation</p>
+                              <ul class="list-inline">
+                                  <li>
+                                    <a href="http://www.newsquare.io/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/theonlytoby"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/tobiasstone"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                          <div class="service-item">
+                            <img class="team" src="img/advisors/matt.jpg"/>
+                              <h4>
+                                  <strong>Matt Clifford</strong>
+                              </h4>
+                              <p>Chief Executive<br>Entrepreneur First</p>
+                              <ul class="list-inline">
+                                  <li>
+                                    <a href="https://www.joinef.com/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/matthewclifford"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/mattcliffordef"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                          <div class="service-item">
+                            <img class="team" src="img/advisors/adil.png"/>
+                              <h4>
+                                  <strong>Adil Mohammed</strong>
+                              </h4>
+                              <p>CEO<br>SpotQA</p>
+                              <ul class="list-inline">
+                                  <li>
+                                    <a href="http://spotqa.com/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/adilmd"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/adilmd"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
                   </div>
 
-                  <div class="row">
-                      <div class="col-md-4 col-md-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/partners/techcityuk.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-4 col-md-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/partners/smartrail.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-4 col-md-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/partners/novacroft.png"/>
-                          </div>
-                      </div>
-                  </div>
+
                   <!-- /.row (nested) -->
               </div>
               <!-- /.col-lg-10 -->
           </div>
           <!-- /.row -->
       </div>
+      <br>
       <!-- /.container -->
   </section>
 
-  <section id="client-list" class="client-list" style="padding-bottom:30px">
+
+    <!-- Joining forces -->
+    <section>
+        <aside class="clients">
+            <div class="text-vertical-center">
+                <h2>We’ve joined forces with the the greatest organisations within the rail industry to drive forward innovation.</h2>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="client-list">
+        <div id="client-list" class="container">
+            <div class="row text-center">
+                <div class="col-md-12"><br><br>
+                    <h2 style="color:white">Partners</h2>
+                    <hr class="small" style="padding-bottom:30px">
+
+                    <div class="row">
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                            <img class="client-list" src="img/partners/dft.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/hs2.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/dbis.png"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                            <img class="client-list" src="img/partners/bae.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/ey.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/oc.png"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                            <img class="client-list" src="img/partners/techcityuk.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/smartrail.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-12">
+                            <div class="service-item">
+                              <img class="client-list" src="img/partners/novacroft.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+  <section id="clients" class="client-list" style="padding-bottom:30px">
       <div id="client-list" class="container">
           <div class="row text-center">
-              <div class="col-md-12">
-                  <h2 style="color:white">Our Clients</h2>
+              <div class="col-md-12"><br><br>
+                  <h2 style="color:white">Clients</h2>
                   <hr class="small" style="padding-bottom:30px">
                   <div class="row">
                       <div class="col-md-2 col-sm-12">
@@ -652,21 +853,52 @@
       <!-- /.container -->
   </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Get in touch.</h3><br>
-                    <a href="mailto:hello@hackpartners.com"><i class="fa fa-envelope fa-fw fa-5x"></i></a>
-                    <br><br>
-                </div>
-            </div>
-        </div>
-    </aside>
+  <section id="contact" class="call-to-action bg-primary">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-12">
+                  <h2 style="color:white">Get in Touch</h2>
+                  <hr class="small" style="padding-bottom:30px">
+                  <div class="row">
+                      <div class="col-md-4 col-sm-12">
+                          <div>
+                            <h4><strong>Hack Partners</strong></h4>
+                            <p>WeWork Old St.<br>18 - 21 Corsham Street<br>London, N1 6DR</p>
+                            <p class="text-muted">Copyright &copy; Hack Partners Limited 2016</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                          <div><br>
+                              <a href="mailto:hello@hackpartners.com"><i class="fa fa-envelope fa-fw fa-5x"></i></a>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                          <div><br><br>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://fb.com/thehacktrain"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/thehacktrain"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/thehacktrain"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                                </li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
+
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <section class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.75545249982!2d-0.08923526724086733!3d51.52692810079731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca5c5a5c0b9%3A0x2e878c589c963592!2sHack+Partners!5e0!3m2!1sen!2suk!4v1473689776148"></iframe>
         <br />
         <small>
@@ -675,88 +907,6 @@
         </iframe>
     </section>
 
-    <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-            <div class="caption">
-                <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-            </div>
-            <img src="img/projects/pointr/2.png" class="img-responsive" alt="">
-        </a>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/projects/pointr/2.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Hack Partners</strong>
-                    </h4>
-                    <p>WeWork Old St.<br>
-                        18 - 21 Corsham Street
-                        <br>London, N1 6DR</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> +44 (0) 7462 858243</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:hello@hackpartners.com">hello@hackpartners.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://fb.com/thehacktrain"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/thehacktrain"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/thehacktrain"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Hack Partners Limited 2016</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -764,6 +914,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
