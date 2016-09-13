@@ -111,8 +111,12 @@ body {
   background-color: #162129;
 }
 
+#press {
+  background-color: #162129;
+}
+
 .client-list img {
-  width: 100px;
+  width: 125px;
 }
 
 #particles-js {
@@ -123,3 +127,8 @@ body {
   height: 100%;
   top: 0;
   left: 0; }
+
+.btn-default {
+    background-color: #00cfa1;
+    border: none;
+  }
