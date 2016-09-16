@@ -132,3 +132,12 @@ body {
     background-color: #00cfa1;
     border: none;
   }
+
+.buttons {
+  background-color: #162129;
+  height: 25%;
+}
+
+.about {
+  background-color: white;
+}
