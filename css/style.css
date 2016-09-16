@@ -1,5 +1,28 @@
+
+@font-face {
+    font-family: 'Brown';
+    src: url('WebFont.eot');
+    src: url('../fonts/brown_bold.woff2') format('woff2'),
+         url('../fonts/brown_bold.ttf') format('ttf'),
+         url('../fonts/brown_bold.otf') format('otf'),
+         url('../fonts/brown_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brown_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'MyWebFont';
+    src: url('WebFont.eot');
+    src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+         url('WebFont.woff') format('woff'),
+         url('WebFont.ttf') format('truetype'),
+         url('WebFont.svg#webfont') format('svg');
+}
+
 body {
-  /*font-family: Helvetica;*/
+  /*font-family: Brown;*/
 }
 
 #tagline {
@@ -136,6 +159,7 @@ body {
 .buttons {
   background-color: #162129;
   height: 20%;
+  font-family: Brown, Montserrat;
 }
 
 .about {
