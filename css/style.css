@@ -147,12 +147,38 @@ body {
     border: none;
   }
 
-.buttons {
+.arrow {
   background-color: #162129;
   height: 20%;
   font-family: Brown, Montserrat;
 }
 
+.buttons {
+  font-family: Brown, Montserrat;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#hackathon {
+  font-family: Brown, Montserrat;
+  display: inline;
+  /*padding-left: 20px;*/
+}
+
 .about {
   background-color: white;
+}
+
+#contact a i {
+  color: #162129;
+}
+
+#contact {
+  /*background-color: #162129;*/
+}
+
+.services {
+  background-color: #00cfa1;
+  color: white;
 }

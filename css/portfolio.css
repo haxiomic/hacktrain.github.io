@@ -9,7 +9,8 @@
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(0, 207, 161, 0.75);
+  /*background: rgba(22, 33, 41, 0.9);*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -18,6 +19,20 @@
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
+
+#services .portfolio-item .portfolio-link .caption {
+  background: rgba(22, 33, 41, 0.75);
+}
+/*
+#services .portfolio-item img {
+  width: 250px;
+}
+
+#services .portfolio-item .portfolio-link .caption {
+  width: 250px;
+}*/
+
+
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
 }
