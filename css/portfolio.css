@@ -23,13 +23,14 @@
 #services .portfolio-item .portfolio-link .caption {
   background: rgba(22, 33, 41, 0.75);
 }
-/*
-#services .portfolio-item img {
+
+/*#services .portfolio-item img {
   width: 250px;
 }
 
 #services .portfolio-item .portfolio-link .caption {
   width: 250px;
+  margin: auto;
 }*/
 
 
@@ -46,6 +47,11 @@
   margin-top: -12px;
   color: white;
 }
+
+#services .portfolio-item .portfolio-link .caption .caption-content {
+  top: 35%;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
