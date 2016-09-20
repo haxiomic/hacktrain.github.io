@@ -43,13 +43,17 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
+              <div id="navlogo">
+                <a class="page-scroll" href="#myCarousel">
+                  <img src="img/logo-side.png"/>
+                </a>
+              </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#myCarousel"><img height="30px" src="img/logo-side.png"/></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right">
@@ -103,33 +107,35 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <a href="#about"><div class="fill" style="background-image:url('img/carousel/logo-carousel.png');"></div></a>
                 <div class="carousel-caption">
-                    <h2>Driving forward innovation in the rail industry.</h2>
+                    <h2 id="carousel-text">Driving forward innovation in the rail industry.</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/chiltern.png');"></div></a>
                 <div class="carousel-caption">
-                    <h2>Solving the industry's greatest challenges.</h2>
+                    <h2 id="carousel-text">Solving the industry's greatest challenges.</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"><div class="fill" style="background-image:url('img/carousel/vtec.png');"></div></a>
                 <div class="carousel-caption">
-                    <h2>Bringing cutting-edge technology to rail.</h2>
+                    <h2 id="carousel-text">Bringing cutting-edge technology to rail.</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <a href="http://uk.hacktrain.com/"><div class="fill" style="background-image:url('img/carousel/hackathon.png');"></div></a>
                 <div class="carousel-caption">
-                    <h2>Apply to attend one of our hackathons today.</h2>
+                    <h2 id="carousel-text">Apply to attend one of our hackathons today.</h2>
                     <div class="buttons">
-                      <a target="_blank" alt="HackTrain EU" href="http://uk.hacktrain.com/" class="btn btn-default btn-lg"> <span style="font-size:23px" class="network-name">HackTrain EU</span></a>
-                    </div>
-                    <div class="buttons">
-                      <a target="_blank" alt="HackTrain HK" href="http://hk.hacktrain.com/" class="btn btn-default btn-lg"> <span style="font-size:23px" class="network-name">HackTrain HK</span></a>
+                          <a target="_blank" alt="HackTrain EU" href="http://uk.hacktrain.com/" class="btn btn-default btn-lg">
+                            <span style="font-size:1em" class="network-name">HackTrain EU</span>
+                          </a>
+                          <a target="_blank" alt="HackTrain HK" href="http://hk.hacktrain.com/" class="btn btn-default btn-lg">
+                            <span style="font-size:1em" class="network-name">HackTrain HK</span>
+                          </a>
                     </div>
                 </div>
             </div>
@@ -144,7 +150,7 @@
         </a>
 
     </header>
-  <section class="arrow" style="padding-top:30px">
+  <section class="arrow">
     <div align="center">
       <div class="col-md-12">
         <div class="row">
@@ -1144,7 +1150,7 @@
                             </fieldset>
                             <br>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-check"></i>&nbsp;Confirm</button>
 
                           </form>
 
@@ -1585,38 +1591,31 @@
                   <!-- <h2 style="color:white">Get in Touch</h2> -->
                   <!-- <hr class="small" style="padding-bottom:30px"> -->
                   <div class="row">
-                      <div class="col-md-4 col-sm-12">
+                      <div class="col-md-4 col-xs-12">
                           <div>
-                            <a class="navbar-brand page-scroll" href="#myCarousel"><img height="105px" src="img/logo.png"/></a>
-                            </div>
+                            <a class="page-scroll" href="#myCarousel">
+                              <img height="105px" src="img/logo.png"/>
+                            </a>
+                          </div>
                       </div>
-                      <div class="col-md-4 col-sm-12">
+                      <div class="col-md-4 col-xs-12">
                           <div>
                             <h4>Hack Partners</h4>
                             <p>WeWork Old St.<br>18 - 21 Corsham Street<br>London, N1 6DR<br>United Kingdom</p>
                           </div>
                       </div>
-                      <div class="col-md-2 col-sm-12">
+                      <div class="col-md-2 col-xs-12">
                           <div>
-
                           </div>
                       </div>
-                      <div class="col-md-2 col-sm-12">
+                      <div class="col-md-2 col-xs-12">
                           <div>
                             <a id="contactform" href="#portfolioModalContact" data-toggle="modal">
                               <h4>Contact Us</h4>
                             </a>
-                            <!-- <a href="#portfolioModalContact" data-toggle="modal"><i class="fa fa-envelope fa-fw fa-4x" id="mailicon"></i></a> -->
                             <a id="mailicon" href="#portfolioModalContact" data-toggle="modal">hello@hackpartners.com</a>
-                            <br><br><a id="mailicon" href="#portfolioModalNews" data-toggle="modal">Sign up to our Newsletter</a>
-                            <!-- <div>
-                                    <div class="caption">
-                                        <div style="text-align:left">
-                                          <h4>Contact Us</h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div> -->
+                            <br><br>
+                            <a id="mailicon" href="#portfolioModalNews" data-toggle="modal">Sign-up to our Newsletter</a>
                           </div>
                       </div>
                   </div>

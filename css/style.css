@@ -153,11 +153,9 @@ body {
   font-family: Brown, Montserrat;
 }
 
-.buttons {
+.buttons a {
   font-family: Brown, Montserrat;
-  display: inline;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 10px;
 }
 
 #hackathon {
@@ -256,4 +254,26 @@ body {
 
 .service-item ul li a:hover {
   color: #00cfa1;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  background-color: #162129;
+}
+
+
+.navbar-default {
+  background-color: #162129;
+}
+
+#carousel-text {
+  font-size: 1.8em;
+}
+
+#navlogo {
+  display: inline;
+}
+
+#navlogo a img {
+  height: 30px;
+  margin-top: 10px;
 }
