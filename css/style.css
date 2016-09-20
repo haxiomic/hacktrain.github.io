@@ -170,15 +170,80 @@ body {
   background-color: white;
 }
 
-#contact a i {
+#socialmedia {
   color: #162129;
 }
 
-#contact {
-  /*background-color: #162129;*/
+#socialmedia:hover {
+  color: white;
+}
+
+#contactform {
+  color: white;
+  font-size: 18px;
+}
+
+#contactform:hover {
+  color: #162129;
+  text-decoration: none;
+}
+
+#mailicon {
+  color: white;
+}
+
+#mailicon:hover {
+  color: #162129;
+  text-decoration: none;
 }
 
 .services {
   background-color: #00cfa1;
   color: white;
+}
+
+#name {
+  /*border: none;*/
+  min-width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#email {
+  /*border: none;*/
+  min-width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#company {
+  /*border: none;*/
+  min-width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#jobtitle {
+  /*border: none;*/
+  min-width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#message {
+  /*border: none;*/
+  min-width: 100%;
+  float: left;
+  display: inline-block;
+}
+
+#send {
+  background-color: #00cfa1;
+  border: none;
+  border-radius: 4px;
+}
+
+#send:hover {
+  background-color: #e6e6e6;
+  background-image: none;
 }
