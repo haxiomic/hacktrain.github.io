@@ -241,6 +241,8 @@ body {
   background-color: #00cfa1;
   border: none;
   border-radius: 4px;
+  padding: 6px 12px;
+  vertical-align: middle;
 }
 
 #send:hover {
