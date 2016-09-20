@@ -249,3 +249,11 @@ body {
   background-color: #e6e6e6;
   background-image: none;
 }
+
+.service-item ul li a {
+  color: #162129;
+}
+
+.service-item ul li a:hover {
+  color: #00cfa1;
+}
