@@ -248,11 +248,11 @@ body {
   background-image: none;
 }
 
-.service-item ul li a {
+.service-item a i {
   color: #162129;
 }
 
-.service-item ul li a:hover {
+.service-item a i:hover {
   color: #00cfa1;
 }
 
@@ -276,4 +276,8 @@ body {
 #navlogo a img {
   height: 30px;
   margin-top: 10px;
+}
+
+.job a i {
+  color: #162129;
 }
