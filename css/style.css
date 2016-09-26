@@ -195,8 +195,8 @@ body {
 }
 
 .services {
-  background-color: #00cfa1;
-  color: white;
+  background-color: #e7e7e7;
+  color: #162129;
 }
 
 #name {
@@ -279,4 +279,34 @@ body {
 
 .job a i {
   color: #162129;
+}
+
+.service-text {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  color: #162129;
+}
+
+.service-left img {
+  display: inline-block;
+  float: left;
+}
+
+.service-right img {
+  display: inline-block;
+  float: right;
+}
+
+#cards {
+  display: block;
+  background-color: white;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 10px;
+  /*margin: 10px;*/
+  align-items: center;
+}
+
+#services hr {
+  border-color: #162129;
 }
