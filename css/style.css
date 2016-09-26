@@ -310,3 +310,39 @@ body {
 #services hr {
   border-color: #162129;
 }
+
+#eu-logo {
+  display: block;
+  width: 25%;
+  margin:auto;
+  padding-top: 15%;
+}
+
+#hk-logo {
+  display: block;
+  width: 100%;
+  margin:auto;
+  padding-top: 30%;
+}
+
+#hackathon-logos {
+  display: block;
+  width: 50%;
+  margin:auto;
+  padding-top: 30%;
+}
+
+#definiton {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#journeys {
+  background-color: #00cfa1;
+  color: white;
+}
+
+#prizes {
+  background-color: #00cfa1;
+  color: white;
+}
