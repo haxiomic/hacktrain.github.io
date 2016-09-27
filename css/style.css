@@ -338,11 +338,15 @@ body {
 }
 
 #journeys {
-  background-color: #00cfa1;
+  background-color: #ea4a4a;
   color: white;
 }
 
 #prizes {
-  background-color: #00cfa1;
+  background-color: #ea4a4a;
+  color: white;
+}
+
+.text-muted {
   color: white;
 }
