@@ -259,6 +259,10 @@ body {
   color: #00cfa1;
 }
 
+#hk:hover {
+  color: #ea4a4a;
+}
+
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
   background-color: #162129;
 }
