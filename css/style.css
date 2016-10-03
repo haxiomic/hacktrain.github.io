@@ -431,8 +431,8 @@ body {
   border-top-color: transparent;
   border-bottom: 0 solid white;
   border-top-width: 0px;
-  border-left-width: 175px;
-  border-right-width: 175px;
+  border-left-width: 125px;
+  border-right-width: 125px;
   border-bottom-width: 90px;
 }
 
@@ -441,8 +441,9 @@ body {
   background-color: white;
   box-shadow: 10px 10px 5px #b83b3b;
   padding: 20px;
-  width: 350px;
+  width: 250px;
   margin: auto;
+  min-height: 300px;
 }
 
 .schedule-text h1 {
