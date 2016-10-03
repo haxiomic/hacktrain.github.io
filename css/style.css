@@ -108,6 +108,10 @@ body {
   width: 150px;
 }
 
+.prize-list img {
+  width: 150px;
+}
+
 /*.fa {
   color: #162129;
 }*/
@@ -344,6 +348,15 @@ body {
 
 #prizes {
   background-color: #ea4a4a;
+  background-image: url("../img/londonskyline.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  color: white;
+}
+
+#prizes-uk {
+  background-color: #00cfa1;
   color: white;
 }
 
@@ -389,4 +402,73 @@ body {
 #hkcards .challenge-bullets ul li {
   vertical-align: middle;
   line-height: 50px;
+}
+
+#paid {
+  text-align: left;
+  line-height: 60px;
+}
+
+#first {
+  text-align: right;
+  font-size: 60px;
+}
+
+#line {
+  text-align: center;;
+  font-size: 60px;
+}
+
+.triangle {
+  margin: 0 auto;
+  width: 0;
+  height: 10px;
+  border-top: 0 solid;
+  border-left: 0 solid;
+  border-right: 0 solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom: 0 solid white;
+  border-top-width: 0px;
+  border-left-width: 175px;
+  border-right-width: 175px;
+  border-bottom-width: 90px;
+}
+
+
+.schedule-text {
+  background-color: white;
+  box-shadow: 10px 10px 5px #b83b3b;
+  padding: 20px;
+  width: 350px;
+  margin: auto;
+}
+
+.schedule-text h1 {
+  color: #ea4a4a;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 0px;
+}
+
+.schedule-text h2 {
+  color: #ea4a4a;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.schedule-text h3 {
+  color: #ea4a4a;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.schedule-text p {
+  color: black;
+  font-size: 14px;
 }
