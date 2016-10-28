@@ -218,5 +218,196 @@
         <!-- /.container -->
     </section>
 
+    <section>
+      <div class="portfolio-modal modal fade" id="portfolioModalContact" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Contact Form</h2>
+                            <hr class="star-primary">
+
+                            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                            action="https://script.google.com/macros/s/AKfycbxLlm8oXDkz8qiA7nko81d2UrQuCWqQ0pin7ewFf_v1M-AMnsU/exec">
+                              <!-- change the form action to your script url -->
+
+                              <fieldset class="pure-group">
+                                <label for="firstname">First Name: </label>
+                                <input id="firstname" name="firstname" required placeholder="John"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="surname">Surname: </label>
+                                <input id="surname" name="surname" required placeholder="Smith"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="email" value=""
+                                required placeholder="youremail@companydomain.com"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="company">Company: </label>
+                                <input id="company" name="company" required placeholder="Rail Limited"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="jobtitle">Job Title: </label>
+                                <input id="jobtitle" name="jobtitle" required placeholder="Head of Procurement"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea id="message" name="message" rows="5"
+                                required placeholder="Dear HackTrain, I'm reaching out to you because..."></textarea>
+                              </fieldset>
+                              <br>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                              <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+                            </form>
+
+                            <div style="display:none;" id="thankyou_message">
+                              <h4>Thanks for getting in touch. We will reply to you shortly.
+                              </h4>
+                                <br>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="portfolio-modal modal fade" id="portfolioModalNews" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>HackTrain Newsletter Sign-up Form</h2>
+                            <hr class="star-primary">
+
+                            <form id="gform2" method="POST" class="pure-form pure-form-stacked"
+                            action="https://script.google.com/macros/s/AKfycbzMSYWHR-hFz63ZHXsqK6eS3mgIk7bhrAT87pwWgo6gikogHzg/exec">
+
+                              <fieldset class="pure-group">
+                                <label for="firstname">First Name: </label>
+                                <input id="firstname" name="firstname" required placeholder="John"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="surname">Surname: </label>
+                                <input id="surname" name="surname" required placeholder="Smith"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="email" value=""
+                                required placeholder="youremail@companydomain.com"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="company">Company: </label>
+                                <input id="company" name="company" required placeholder="Rail Limited"/>
+                              </fieldset>
+                              <fieldset class="pure-group">
+                                <label for="jobtitle">Job Title: </label>
+                                <input id="jobtitle" name="jobtitle" required placeholder="Head of Procurement"/>
+                              </fieldset>
+                              <br>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                              <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-check"></i>&nbsp;Confirm</button>
+
+                            </form>
+
+                            <div style="display:none;" id="thankyou_message2">
+                              <h3>Subscription confirmed.</h3>
+                              <h4>You are now signed up to the HackTrain newsletter.</h4>
+                                <br>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <div>
+                              <a class="page-scroll" href="#myCarousel">
+                                <img height="105px" src="../../img/logo.png"/>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div>
+                              <h4>Hack Partners</h4>
+                              <p>WeWork Old St.<br>18 - 21 Corsham Street<br>London, N1 6DR<br>United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-12">
+                            <div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-12">
+                            <div>
+                              <a id="contactform" href="#portfolioModalContact" data-toggle="modal">
+                                <h4>Contact Us</h4>
+                              </a>
+                              <a id="mailicon" href="#portfolioModalContact" data-toggle="modal">hello@hackpartners.com</a>
+                              <br><br>
+                              <a id="mailicon" href="#portfolioModalNews" data-toggle="modal">Sign-up to our Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br><hr class="star-primary"><br>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-12">
+                        <p style="text-align:left" class="text-muted">Copyright © 2016 Hack Partners Limited. All rights reserved. HackTrain is a registered trademark of Hack Partners Limited.</p>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                      </div>
+                      <div class="col-md-2 col-sm-12">
+                      </div>
+                      <div style="text-align:left" class="col-md-2 col-sm-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://fb.com/thehacktrain"><i id="socialmedia" class="fa fa-facebook fa-fw fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/thehacktrain"><i id="socialmedia" class="fa fa-twitter fa-fw fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/thehacktrain"><i id="socialmedia" class="fa fa-instagram fa-fw fa-2x"></i></a>
+                            </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+
   </body>
 </html>
