@@ -603,3 +603,10 @@ footer ul li{
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
+
+@media handheld, only screen and (max-width: 1024px) 
+{
+    margin:0 auto;
+	padding:0 10px;
+	width: 940px;
+}
