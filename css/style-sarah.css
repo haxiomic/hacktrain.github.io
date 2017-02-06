@@ -102,6 +102,12 @@ body {
 	width: 1050px;
 }
 
+.wrapper3 {
+	margin:0 auto;
+	padding:0;
+	width: 940px;
+}
+
 .clear{
 	clear:both;
 }
@@ -253,6 +259,18 @@ header h1{
 	margin: 0 auto;
 	margin-top: 230px;
 	margin-left:130px;
+}
+
+.logo-apply-form{
+	display:block;
+	font-size:40px;
+	font-family: "GothamThin";
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align:left;
+	margin-top:35px;
+	margin-left:60px;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.76);
 }
 
 .button-1{
