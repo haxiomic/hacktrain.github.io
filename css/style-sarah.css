@@ -610,3 +610,24 @@ footer ul li{
 	padding:0 10px;
 	width: 940px;
 }
+
+@media screen and (max-width: 480px) 
+	{
+	.wrapper {
+		margin:0 auto;
+		padding:0 10px;
+		width: 550px;
+	}
+
+	.wrapper2 {
+		margin:0 auto;
+		padding:0 10px;
+		width: 580px;
+	}
+
+	.wrapper3 {
+		margin:0 auto;
+		padding:0;
+		width: 550px;
+	}
+}
