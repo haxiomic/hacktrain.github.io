@@ -182,7 +182,7 @@ Main components
 @media only screen and (min-width: 768px) {
   .cd-faq-group {
     /* all groups visible */
-    display: block;
+    display: none;
   }
   .cd-faq-group > li {
     background: #ffffff;
