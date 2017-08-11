@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
 	});
 
 	function initBackground() {
-		var wrapperHeight = Math.ceil(halfWindowW*2.3/aspectRatio), 
+		var wrapperHeight = Math.ceil(halfWindowW*2.2/aspectRatio), 
 			proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
 			newImageWidth = Math.ceil(halfWindowW*2*proportions),
 			newImageHeight = Math.ceil(newImageWidth/aspectRatio),
