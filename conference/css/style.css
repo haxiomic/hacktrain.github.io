@@ -32,3 +32,20 @@
   font-size: 26px;
   font-style: italic;
 }
+
+@media only screen and (max-width: 767px) {
+  .btn {
+  font-family: 'SFPixelate', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0px;
+  background-color: black;
+  color:#ffcc00;
+  border-color:black;
+  }
+  .btn-xl {
+    padding: 10px 35px;
+    font-size: 21px;
+    font-style: italic;
+  }
+}
