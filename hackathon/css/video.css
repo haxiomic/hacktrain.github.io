@@ -25,7 +25,8 @@ body {
 }
 
 .cover .hi img {
-    width:90%;
+    width:38%;
+    margin:20px;
 }
 .cover .hi span {
   cursor: pointer;
