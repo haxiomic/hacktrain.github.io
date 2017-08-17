@@ -1,11 +1,6 @@
 @font-face {
-	font-family: "SFPixelate";
-	src: url('../fonts/SFPixelate-Oblique.ttf')
-}
-
-@font-face {
-  font-family: "Avenir";
-  src: url('../fonts/AvenirLTStd-Roman.ttf')
+  font-family: "SFPixelate";
+  src: url('../fonts/SFPixelate-Oblique.ttf')
 }
 
 .btn-outline {
@@ -21,6 +16,23 @@
   font-weight:800;
 
 }
+
+.btn-outline-body {
+  border: solid 5px black;
+}
+
+.btn-outline-body:hover,
+.btn-outline-body:focus,
+.btn-outline-body:active,
+.btn-outline.active {
+  background-color: black;
+  color:#ffcc00;
+  border-color:black;
+  -webkit-box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+  -moz-box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+  box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+}
+
 .btn {
   font-family: 'SFPixelate', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
@@ -40,7 +52,7 @@
 }
 
 .btn2 {
-  font-family: 'Avenir', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', 'sans-serif';
   font-weight:500;
   line-height: 28px;
   text-transform: uppercase;
@@ -68,3 +80,4 @@
     padding: 10px 10px;
     margin-left:0px;
   }
+
