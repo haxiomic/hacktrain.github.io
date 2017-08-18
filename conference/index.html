@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<html lang="en">
 
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The HackTrain Conference 4.0</title>
+    <title>The HackTrain Conference</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,71 +29,453 @@
 
     <link href="css/video.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- for unminified version add this -->
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    <!-- for minified version add this -->
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.min.css" />
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald">
+
+    
 
 </head>
 
 <body>
+    <!-- Navigation
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper" style="z-index:10;">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$( "#menu-close").click();>Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$( "#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$( "#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$( "#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$( "#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+     -->
 
-    <!-- Navigation  
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Header -->
+    <header class="full cover" id="top">
         <div class="container">
-            Brand and toggle get grouped for better mobile display 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            Collect the nav links, forms, and other content for toggling 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="../index.html">Back to Home</a>
-                    </li>
+            <div class="hi">
+                <img src="img/header-logo4.png" id="none"><br>
+                <img src="img/header-logo-mobile2.png" id="mobile"><br>
+                <a href="apply/index.html" class="btn btn-default btn-xl btn-outline">APPLY</a><br>
 
-                </ul>
-            </div>
-            /.navbar-collapse -->
-       <!-- </div> -->
-        <!-- /.container -->
-   <!-- </nav> -->
-
-    <!-- Put your page content here! -->
-
-
-
-    <div class="cover">
-        <div class="hi">
-            <img src="img/header-logo4.png" id="none"><br>
-            <img src="img/header-logo-mobile2.png" id="mobile"><br>
-            <a href="apply/index.html" class="btn btn-default btn-xl btn-outline">APPLY</a><br>
-
-            <img src="img/themes.png" style="margin: 50px 0 50px 0;" id="none">
+                <img src="img/themes.png" style="margin: 50px 0 50px 0;" id="none">
+            </div>        
         </div>
-    </div>  
+    </header>
 
     <div class="tv">
       <div class="screen mute" id="tv"></div>
     </div>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- Call to Action --> 
+    <aside class="call-to-action text-white">
+        <div class="container text-center">
+            <div id='flip_timer'></div>
+        </div>
+    </aside>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="row updown-wrap">
+                        <div class="col-md-4 text-center">
+                            <h1>"INNOVATION"</h1>
+                        </div>
+                        <div class="col-md-8">
+                            <p>...is at the tip of everyon'es tongue in the rail industry now. A word
+                            that was disregarded and thrown away 24 months ago is now the hottest thing
+                            since the Stephenson Rocket.
+                            <br>
+                            <br>
+                            Unfortunately, despite being so heavily used, so little is actually being
+                            done in the industry, and what little activity there is second rate compared 
+                            to other markets and industries.
+                            <br>
+                            <br>
+                            <span>We're not here to answer how we've ended up here in this situation.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row updown-wrap">
+                        <div class="col-md-4 text-center">
+                            <h1>WE'RE HERE TO GET OUT OF IT...</h1>
+                        </div>
+                        <div class="col-md-8">
+                            <p>A lot is made of the word ‘innovation’, and much like ‘disrupt’ it is a word that features strongly on websites, business strategies and marketing campaigns worldwide.  These words have become a phenomenon unto themselves. Overapplication threatens to reduce both to their lowest common denominators, as their meaning and the cultural narrative they represent becomes all the more ambiguous.
+                            <br>
+                            <br>
+                            Here at Hack Partners, we have been successfully lobbying for innovation in the rail industry for almost three years. In fact, we care so much about innovation, we deconstructed the myth behind these words to uncover the concept that lies at the heart of them: 
+                            <br>
+                            <br>
+                            <span>We're not here to answer how we've ended up here in this situation.</span>
+                            </p>
+                            <h2 class="text-center">CREATIVITY</h2>
+                            <p>We believe disruptive creativity is what’s needed to secure the future success of the rail industry. So far, we have identified many of the issues that are holding rail back and are now looking outside the industry for inspiring ideas we can apply to tackling the issues we uncovered.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.col-lg-10 -->
+
+            <!-- /.row -->
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <div class="container container-border">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <h1>SPEAKERS</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 speaker-1" id="parent">
+                <div id="child">
+                    <h2>River Tamoor Baig</h2>
+                    <p >CEO & Founder<br>
+                    <span>Hack Partners</span></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 speaker-2" id="parent">
+                <div id="child">
+                    <h2>Tom Ewing</h2>
+                    <p >Principal Data Scientist<br>
+                    <span>Department for Transport</span></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 speaker-3" id="parent">
+                <div id="child">
+                    <h2>Toby Stone</h2>
+                    <p >Chairman<br>
+                    <span>Hack Partners</span></p>
+                </div>
+            </div>
+
+
+        </div>
+    </aside>
+
+    <!-- Schedule -->
+    <section id="schedule" class="schedule">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>SCHEDULE</h1>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>8:30-9:30</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Registration & Breakfast</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>9:30-9:45</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Introduction by CEO</p>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <h3>The here and now</h3>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>9:50-10:10</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Culture & Innovation</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2 style="padding-bottom:36px;">10:15-10:35</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>A New Digital Nation: E-Estonia's Intelligent Transportations Systems</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2 style="padding-bottom:36px;">10:40-11:10</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Panel Discussion: Creating a Culture of<br>Innovation</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>11:20 - 11:40</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Cybersecurity</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2 style="padding-bottom:36px;">11:45-12:15</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Panel discussion: Cyber security - Assessing the threat posed by the Internet of Things</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>12:25-13:25</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Lunch</p>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <h3>The not so distant future</h3>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>13:25-13:35</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Sponsor Session</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>13:40-13:55</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Infrastructure x Network Rail</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>14:00 - 14:10</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Rolling Stock</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>14:15-14:30</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Customer Engagement</p>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <h3>The future prophesised</h3>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>14:35-15:05</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Panel Discussion: Trains with Brains - AI and Rail</p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <h4>15:15 <span style="margin-right:70px;">PANEL</span>   
+                            15:15  <span>WORKSHOP</span> 
+                            </h4>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>16:20-16:50</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Panel Discussion: Blockchain on Rail</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>17:00 - 17:15</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>The HackTrain Incubation Fund</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>17:20 - 17:30</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Closing Remarks</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+
+            <!-- /.row -->
+        <!-- /.container -->
+    </section>
+
+    <!-- Social Media -->
+    <aside class="social-media">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>#HackTrain4</h1>
+                            <h2>Follow us on social media to get live, behind-the-scenes coverage and<br>updates of the event!</h2>
+                            <a href="https://www.facebook.com/thehacktrain/" class="fa fa-facebook" target="_blank"></a>
+                            <a href="https://twitter.com/TheHackTrain" class="fa fa-twitter" target="_blank"></a>
+                            <a href="https://www.linkedin.com/company-beta/10041577/" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Location -->
+    <aside class="location">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>VENUE TO BE ANNOUNCED!</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ 
+    <section id="services" class="services bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h2>BLOG</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h4><strong>Hack Partners</strong>
+                    </h4>
+                    <p>WeWork Old Street
+                        <br>41 Corsham Street<br>N1 6DR</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:hello@hackpartners.com">hello@hackpartners.com</a>
+                        </li>
+                    </ul>
+                    
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Hack Partners 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-light btn-lg page-scroll"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/video.js"></script>
+
+    <script src="js/countdown.js"></script>
 
 </body>
 

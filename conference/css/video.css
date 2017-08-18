@@ -1,10 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
-
-body {
-  background: #d40050;
-}
 .cover {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -22,6 +16,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  z-index:10;
 }
 
 @media only screen and (min-width: 767px) {

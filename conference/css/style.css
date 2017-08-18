@@ -1,51 +1,83 @@
 @font-face {
-	font-family: "SFPixelate";
-	src: url('../fonts/SFPixelate-Bold.ttf')
+  font-family: "SFPixelate";
+  src: url('../fonts/SFPixelate-Oblique.ttf')
 }
 
 .btn-outline {
-  color: black;
-  border-color: black;
-  border: 1px solid;
-  
+  border: solid 5px black;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: black;
-  background-color: #ffcc00;
-  border-color: #ffcc00;
+  color: #ffcc00;
+  background-color: black;
+  border: solid 5px #ffcc00;
+  font-weight:800;
 
 }
+
+.btn-outline-body {
+  border: solid 5px black;
+}
+
+.btn-outline-body:hover,
+.btn-outline-body:focus,
+.btn-outline-body:active,
+.btn-outline.active {
+  background-color: black;
+  color:#ffcc00;
+  border-color:black;
+  -webkit-box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+  -moz-box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+  box-shadow: 10px 10px 0px 1px rgba(255,204,0,1);
+}
+
 .btn {
   font-family: 'SFPixelate', 'Helvetica', 'Arial', 'sans-serif';
-  text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 0px;
   background-color: black;
   color:#ffcc00;
   border-color:black;
-}
-.btn-xl {
-  padding: 10px 45px;
-  font-size: 26px;
   font-style: italic;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+.btn-xl {
+  font-size: 21px;
+}
+
+.btn2 {
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight:500;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: solid 5px #FFFFFF;
+  background-color: #0033ff;
+  color:#FFFFFF;
+  width:170px;
+  padding: 12px 0px;
+  margin-left: -20px;
 }
 
 @media only screen and (max-width: 767px) {
-  .btn {
-  font-family: 'SFPixelate', 'Helvetica', 'Arial', 'sans-serif';
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 0px;
-  background-color: black;
-  color:#ffcc00;
-  border-color:black;
-  }
   .btn-xl {
-    padding: 10px 35px;
-    font-size: 21px;
-    font-style: italic;
+    font-size: 16px;
   }
-}
+  .btn2{
+    width:130px;
+    font-weight:600;
+    padding: 5px 0;
+    margin-left:0px;
+  }
+
+  .btn{
+    padding: 10px 10px;
+    margin-left:0px;
+  }
+
