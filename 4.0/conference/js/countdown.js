@@ -41,7 +41,7 @@ function getTimeRemaining(endtime) {
   return {
     'Total': t,
     'Weeks': Math.floor(t / (1000 * 60 * 60 * 24 * 7)),
-    'Days': Math.floor(t / (1000 * 60 * 60 * 24)),
+    'Days': Math.floor(t / (1000 * 60 * 60 * 24 *7) %7),
     'Hours': Math.floor((t / (1000 * 60 * 60)) % 24),
     'Minutes': Math.floor((t / 1000 / 60) % 60)
   };

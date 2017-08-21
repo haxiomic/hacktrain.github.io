@@ -209,28 +209,37 @@ hr.small {
     text-align: left;
 }
 
+.avatar{
+    background-image: url('../img/speakers/avatar.png');
+}
+
 .speaker-1{
     background-image: url('../img/speakers/river.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 .speaker-2{
     background-image: url('../img/speakers/tom.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 .speaker-3{
     background-image: url('../img/speakers/toby.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
+}
+
+.speaker-4{
+    background-image: url('../img/speakers/tanja.png');
+}
+
+.speaker-5{
+    background-image: url('../img/speakers/james.png');
+}
+
+
+.cover-photo{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .callout {
@@ -306,7 +315,7 @@ hr.small {
     font-size: 32px;
     color: #0033ff;
     font-family: 'Oswald', Georgia, sans-serif;
-    margin-bottom: 50px;
+    margin: 30px 0 50px 0;
     line-height: 1.5;
     font-weight:800;
 
@@ -319,7 +328,21 @@ hr.small {
     background-color:white;
     border: 7px solid #0033ff;
     padding:0px;
-    margin: 0 130px 20px 130px;
+    margin: -35px 130px 20px 130px;
+    line-height: 1.5;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+}
+
+.portfolio h3{
+    font-size: 22px;
+    color: #0033ff;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    background-color:white;
+    border: 7px solid #0033ff;
+    padding:15px;
+    margin-bottom:15px;
     line-height: 1.5;
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
@@ -327,10 +350,11 @@ hr.small {
 }
 
 .portfolio p{
-    padding:20px;
+    padding-top:20px;
     font-size: 18px;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
     letter-spacing: 0.5px;
+    margin:15px 0 40px 0;
 }
 
 .portfolio span{
@@ -594,7 +618,7 @@ hr.small {
 /*social media*/
 
 .social-media{
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #0033ff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -603,6 +627,18 @@ hr.small {
 }
 
 .social-media h1{
+    font-size: 28px;
+    color: white;
+    font-family: 'proxima_nova_ltsemibold', Georgia, sans-serif;
+    margin: 0px 90px 40px 90px;
+    border: 5px solid white;
+    -webkit-box-shadow: 7px 7px 0px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 7px 7px 0px 1px rgba(255,255,255,1);
+    padding:10px;
+    letter-spacing: 3px;
+}
+
+.social-media h2{
     font-size: 42px;
     color: #ffcc00;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
@@ -610,7 +646,7 @@ hr.small {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
-.social-media h2{
+.social-media h3{
     font-size: 20px;
     color: #FFF;
     font-family: 'proxima_nova_ltsemibold', Georgia, sans-serif;
