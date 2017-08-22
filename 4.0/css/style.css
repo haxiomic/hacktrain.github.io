@@ -38,6 +38,7 @@ Main Components
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 
+
 }
 .cd-floating-background.is-absolute {
   position: absolute;
@@ -45,16 +46,17 @@ Main Components
 .cd-floating-background img {
   display: block;
   width: 100%;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* fixes a Firefox bug - images not correctly rendered*/
   background-color: rgba(255, 255, 255, 0.01);
 }
+
 .cd-floating-background img:not(:first-child) {
   position: absolute;
   top: 0;
   left: 0;
+
 }
 .cd-floating-background img:first-child {
   -webkit-transform: translateZ(50px);
@@ -86,7 +88,6 @@ Main Components
 .cd-floating-background a{
   display: block;
   width: 100%;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* fixes a Firefox bug - images not correctly rendered*/
