@@ -99,11 +99,29 @@ Main Components
   z-index:1;
 
 }
+.cd-floating-background a:nth-child(5) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+  width:115px;
+  top:69%;
+  left:42%;
+}
 .cd-floating-background a:nth-child(4) {
   -webkit-transform: translateZ(400px);
   -ms-transform: translateZ(400px);
   transform: translateZ(400px);
+  width:115px;
+  top:69%;
+  left:51%;
+}
 
+.cd-floating-background a:nth-child(4):hover{
+  opacity:0.7;
+}
+
+.cd-floating-background a:nth-child(5):hover{
+  opacity:0.7;
 }
 
 
