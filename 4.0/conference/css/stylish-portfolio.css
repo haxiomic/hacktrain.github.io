@@ -311,6 +311,19 @@ hr.small {
     margin: 0 auto;
 }
 
+.portfolio h4{
+  font-size: 28px;
+  color: black;
+  font-family: 'proxima_nova_ltsemibold', Georgia, sans-serif;
+  margin: 0px 80px 40px 80px;
+  padding:15px;
+  border: 5px solid black;
+  -webkit-box-shadow: 7px 7px 0px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 7px 7px 0px 1px rgba(0,0,0,1);
+  padding:10px;
+  letter-spacing: 3px;
+}
+
 .portfolio h1{
     font-size: 32px;
     color: #0033ff;
@@ -361,6 +374,10 @@ hr.small {
     color:#0033ff;
 }
 
+.portfolio img{
+  padding:20px;
+  margin-top:20px;
+}
 .updown-wrap{
     border-top: 8px solid black;
 }
