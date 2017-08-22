@@ -311,11 +311,30 @@ hr.small {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio p{
+    padding:10px;
+    margin-top:-60px !important;
+  }
+
+  .portfolio h2{
+    margin-bottom:100px!important;
+  }
+  .portfolio h3{
+    font-size:18px !important;
+  }
+  .portfolio img{
+    padding:80px !important;
+    margin-top:-90px !important;
+  }
+}
+
 .portfolio h4{
   font-size: 32px;
   color: black;
   font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-  margin: 0px 100px 40px 100px;
+  margin: 0px 0px 40px 0px;
+  width:350px;
   padding:15px;
   border: 5px solid black;
   -webkit-box-shadow: 7px 7px 0px 1px rgba(0,0,0,1);
@@ -341,7 +360,8 @@ hr.small {
     background-color:white;
     border: 7px solid #0033ff;
     padding:0px;
-    margin: -35px 130px 20px 130px;
+    margin: -35px 0px 20px 0px;
+    width:220px;
     line-height: 1.5;
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
