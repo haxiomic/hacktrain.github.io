@@ -109,16 +109,20 @@ Main Components
   -ms-transform: translateZ(400px);
   transform: translateZ(400px);
   width:115px;
-  top:66%;
-  left:42%;
+  top:21%;
+  left:39%;
+  margin-left: 42.5px;
+  margin-top: 400px;
 }
 .cd-floating-background a:nth-child(4) {
   -webkit-transform: translateZ(400px);
   -ms-transform: translateZ(400px);
   transform: translateZ(400px);
   width:115px;
-  top:66%;
-  left:51%;
+  top:21%;
+  left:39%;
+  margin-left: 192.5px;
+  margin-top: 400px;
 }
 
 .cd-floating-background a:nth-child(4):hover{
