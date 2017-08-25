@@ -709,6 +709,40 @@ hr.small {
     opacity: 0.7;
 }
 
+/*delegates*/
+.delegates {
+    padding: 20px 0;
+    background-image: url('../img/schedule.png');
+}
+
+.delegates h1{
+    font-size: 32px;
+    color: #0033ff;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    border: 5px solid #0033ff;
+    -webkit-box-shadow: 7px 7px 0px 1px rgba(0,51,255,1);
+    -moz-box-shadow: 7px 7px 0px 1px rgba(0,51,255,1);
+    padding:15px;
+    letter-spacing: 2px;
+}
+
+.delegates p{
+    font-size:15px;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    margin-top:15px;
+}
+
+.delegates span{
+  font-family:'proxima_nova_altbold';
+  font-size:16px;
+}
+.delegates img{
+  border: 5px solid white;
+  margin: 25px 0 0 15px;
+  width:130px;
+
+}
+
 /*location*/
 
 .location{
@@ -753,6 +787,10 @@ hr.small {
   -moz-box-shadow: 7px 7px 0px 1px rgba(0,0,0,1);
   padding:10px;
   letter-spacing: 2px;
+}
+
+.ticket p{
+  font-family: 'SFPixelate', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 /* Footer */
