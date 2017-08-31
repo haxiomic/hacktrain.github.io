@@ -234,6 +234,12 @@ hr.small {
     background-image: url('../img/speakers/james.png');
 }
 
+.speaker-6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9)), url('../img/speakers/max.png');
+}
+.speaker-7{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/marius.png');
+}
 
 .cover-photo{
   -webkit-background-size: cover;
