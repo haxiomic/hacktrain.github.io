@@ -240,6 +240,12 @@ hr.small {
 .speaker-7{
     background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/marius.png');
 }
+.speaker-8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/anish.png');
+}
+.speaker-9{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/josh.png');
+}
 
 .cover-photo{
   -webkit-background-size: cover;
@@ -261,7 +267,7 @@ hr.small {
 }
 
 .callout h1{
-    font-size: 32px;
+    font-size: 30px;
     color: white;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
     border: 5px solid white;
@@ -280,7 +286,7 @@ hr.small {
 }
 
 .callout p{
-    font-size:21px;
+    font-size:18px;
     color:white;
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
@@ -438,6 +444,10 @@ hr.small {
 .schedule {
     padding: 50px 0;
     background-image: url('../img/schedule.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .schedule h1{
