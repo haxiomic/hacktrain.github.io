@@ -226,8 +226,8 @@ hr.small {
     font-size: 32px;
     color: white;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-    border: 10px solid white;
-    padding:20px;
+    border: 6px solid white;
+    padding:15px;
     margin:30px 0px 50px 0px;
     letter-spacing: 3px;
     -webkit-box-shadow: 10px 10px 0px 1px rgba(255,255,255,1);
@@ -278,8 +278,8 @@ hr.small {
     font-size: 32px;
     color: #0033ff;
     font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-    border: 10px solid #0033ff;
-    padding:20px;
+    border: 6px solid #0033ff;
+    padding:15px;
     margin-bottom: 50px;
     line-height: 1.5;
     -webkit-box-shadow: 10px 10px 0px 1px rgba(0,51,255,1);
@@ -344,6 +344,38 @@ hr.small {
 .call-to-action
 
 
+/* Sponsors */
+.sponsors{
+    padding: 50px 0;
+}
+
+.sponsors h1{
+    font-size: 32px;
+    color: #0033ff;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    border: 6px solid #0033ff;
+    padding:15px;
+    margin-top:50px;
+    line-height: 1.5;
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0,51,255,1);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0,51,255,1);
+    box-shadow: 10px 10px 0px 1px rgba(0,51,255,1);
+}
+
+.sponsors h2{
+    font-size: 28px;
+    color: #222222;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    margin:40px 0 5px 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.sponsors img{
+    margin-top: 15px;
+}
+
+
 /* Map */
 
 .map {
@@ -365,6 +397,7 @@ hr.small {
 
 footer {
     padding: 20px 0;
+    background-color: #eeeeee;
 }
 
 footer p, h4, a, strong{
