@@ -222,12 +222,12 @@ hr.small {
 }
 
 .speaker-3{
-    background-image: url('../img/speakers/toby.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.2)),url('../img/speakers/toby.png');
 
 }
 
 .speaker-4{
-    background-image: url('../img/speakers/tanja.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.9)),url('../img/speakers/tanja.png');
 }
 
 .speaker-5{
@@ -235,7 +235,7 @@ hr.small {
 }
 
 .speaker-6{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9)), url('../img/speakers/max.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1)), url('../img/speakers/max.png');
 }
 .speaker-7{
     background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/marius.png');
@@ -245,6 +245,10 @@ hr.small {
 }
 .speaker-9{
     background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/josh.png');
+}
+
+.speaker-10{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('../img/speakers/peter.png');
 }
 
 .cover-photo{
