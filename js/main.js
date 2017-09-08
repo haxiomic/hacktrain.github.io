@@ -1,141 +1,119 @@
 jQuery(document).ready(function($){
-	//update these values if you change these breakpoints in the style.css file (or _layout.scss if you use SASS)
-	var MqM= 768,
-		MqL = 1024;
+	//define store some initial variables
+	var	halfWindowH = $(window).height()*0.5,
+		halfWindowW = $(window).width()*0.5,
+		//define a max rotation value (X and Y axises)
+		maxRotationY = 5,
+		maxRotationX = 3,
+		aspectRatio;
 
-	var faqsSections = $('.cd-faq-group'),
-		faqTrigger = $('.cd-faq-trigger'),
-		faqsContainer = $('.cd-faq-items'),
-		faqsCategoriesContainer = $('.cd-faq-categories'),
-		faqsCategories = faqsCategoriesContainer.find('a'),
-		closeFaqsContainer = $('.cd-close-panel');
+	//detect if hero <img> has been loaded and evaluate its aspect-ratio
+	$('.cd-floating-background').find('img').eq(0).load(function() {
+		aspectRatio = $(this).width()/$(this).height();
+  		if( $('html').hasClass('preserve-3d') ) initBackground();
+	}).each(function() {
+		//check if image was previously load - if yes, trigger load event
+  		if(this.complete) $(this).load();
+	});
 	
-	//select a faq section 
-	faqsCategories.on('click', function(event){
-		event.preventDefault();
-		var selectedHref = $(this).attr('href'),
-			target= $(selectedHref);
-		if( $(window).width() < MqM) {
-			faqsContainer.scrollTop(0).addClass('slide-in').children('ul').removeClass('selected').end().children(selectedHref).addClass('selected');
-			closeFaqsContainer.addClass('move-left');
-			$('body').addClass('cd-overlay');
-		} else {
-	        $('body,html').animate({ 'scrollTop': target.offset().top - 19}, 200); 
-		}
-	});
-
-	//close faq lateral panel - mobile only
-	$('body').bind('click touchstart', function(event){
-		if( $(event.target).is('body.cd-overlay') || $(event.target).is('.cd-close-panel')) { 
-			closePanel(event);
-		}
-	});
-	faqsContainer.on('swiperight', function(event){
-		closePanel(event);
-	});
-
-	//show faq content clicking on faqTrigger
-	faqTrigger.on('click', function(event){
-		event.preventDefault();
-		$(this).next('.cd-faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
-	});
-
-	//update category sidebar while scrolling
-	$(window).on('scroll', function(){
-		if ( $(window).width() > MqL ) {
-			(!window.requestAnimationFrame) ? updateCategory() : window.requestAnimationFrame(updateCategory); 
-		}
-	});
-
-	$(window).on('resize', function(){
-		if($(window).width() <= MqL) {
-			faqsCategoriesContainer.removeClass('is-fixed').css({
-				'-moz-transform': 'translateY(0)',
-			    '-webkit-transform': 'translateY(0)',
-				'-ms-transform': 'translateY(0)',
-				'-o-transform': 'translateY(0)',
-				'transform': 'translateY(0)',
-			});
-		}	
-		if( faqsCategoriesContainer.hasClass('is-fixed') ) {
-			faqsCategoriesContainer.css({
-				'left': faqsContainer.offset().left,
-			});
-		}
-	});
-
-	function closePanel(e) {
-		e.preventDefault();
-		faqsContainer.removeClass('slide-in').find('li').show();
-		closeFaqsContainer.removeClass('move-left');
-		$('body').removeClass('cd-overlay');
-	}
-
-	function updateCategory(){
-		updateCategoryPosition();
-		updateSelectedCategory();
-	}
-
-	function updateCategoryPosition() {
-		var top = $('.cd-faq').offset().top,
-			height = jQuery('.cd-faq').height() - jQuery('.cd-faq-categories').height(),
-			margin = 20;
-		if( top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop() ) {
-			var leftValue = faqsCategoriesContainer.offset().left,
-				widthValue = faqsCategoriesContainer.width();
-			faqsCategoriesContainer.addClass('is-fixed').css({
-				'left': leftValue,
-				'top': margin,
-				'-moz-transform': 'translateZ(0)',
-			    '-webkit-transform': 'translateZ(0)',
-				'-ms-transform': 'translateZ(0)',
-				'-o-transform': 'translateZ(0)',
-				'transform': 'translateZ(0)',
-			});
-		} else if( top - margin + height <= $(window).scrollTop()) {
-			var delta = top - margin + height - $(window).scrollTop();
-			faqsCategoriesContainer.css({
-				'-moz-transform': 'translateZ(0) translateY('+delta+'px)',
-			    '-webkit-transform': 'translateZ(0) translateY('+delta+'px)',
-				'-ms-transform': 'translateZ(0) translateY('+delta+'px)',
-				'-o-transform': 'translateZ(0) translateY('+delta+'px)',
-				'transform': 'translateZ(0) translateY('+delta+'px)',
-			});
-		} else { 
-			faqsCategoriesContainer.removeClass('is-fixed').css({
-				'left': 0,
-				'top': 0,
-			});
-		}
-	}
-
-	function updateSelectedCategory() {
-		faqsSections.each(function(){
-			var actual = $(this),
-				margin = parseInt($('.cd-faq-title').eq(1).css('marginTop').replace('px', '')),
-				activeCategory = $('.cd-faq-categories a[href="#'+actual.attr('id')+'"]'),
-				topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
-			
-			if ( ( topSection - 20 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 20 > $(window).scrollTop() ) ) {
-				activeCategory.addClass('selected');
-			}else {
-				activeCategory.removeClass('selected');
+	//detect mouse movement
+	$('.cd-background-wrapper').each(function(){
+		$(this).on('mousemove', function(event){
+			var wrapperOffsetTop = $(this).offset().top;
+			if( $('html').hasClass('preserve-3d') ) {
+				window.requestAnimationFrame(function(){
+					moveBackground(event, wrapperOffsetTop);
+				});
 			}
+		});
+	});
+
+	//on resize - adjust .cd-background-wrapper and .cd-floating-background dimentions and position
+	$(window).on('resize', function(){
+		if( $('html').hasClass('preserve-3d') ) {
+			window.requestAnimationFrame(function(){
+				halfWindowH = $(window).height()*0.5,
+				halfWindowW = $(window).width()*0.5;
+				initBackground();
+			});
+		} else {
+			$('.cd-background-wrapper').attr('style', '');
+			$('.cd-floating-background').attr('style', '').removeClass('is-absolute');
+		}
+	});
+
+	function initBackground() {
+		var wrapperHeight = Math.ceil(halfWindowW*2.1/aspectRatio), 
+			proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
+			newImageWidth = Math.ceil(halfWindowW*2*proportions),
+			newImageHeight = Math.ceil(newImageWidth/aspectRatio),
+			newLeft = halfWindowW - newImageWidth/2,
+			newTop = (wrapperHeight - newImageHeight)/2;
+
+		//set an height for the .cd-background-wrapper
+		$('.cd-background-wrapper').css({
+			'height' : wrapperHeight,
+		});
+		//set dimentions and position of the .cd-background-wrapper		
+		$('.cd-floating-background').addClass('is-absolute').css({
+			'left' : newLeft,
+			'top' : newTop,
+			'width' : newImageWidth,
+		});
+	}
+
+	function moveBackground(event, topOffset) {
+		var rotateY = ((-event.pageX+halfWindowW)/halfWindowW)*maxRotationY,
+			yPosition = event.pageY - topOffset,
+			rotateX = ((yPosition-halfWindowH)/halfWindowH)*maxRotationX;
+
+		if( rotateY > maxRotationY) rotateY = maxRotationY;
+		if( rotateY < -maxRotationY ) rotateY = -maxRotationY;
+		if( rotateX > maxRotationX) rotateX = maxRotationX;
+		if( rotateX < -maxRotationX ) rotateX = -maxRotationX;
+
+		$('.cd-floating-background').css({
+			'-moz-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+		    '-webkit-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+			'-ms-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+			'-o-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+			'transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
 		});
 	}
 });
-$(function(){
- var shrinkHeader = 300;
-  $(window).scroll(function() {
-    var scroll = getCurrentScroll();
-      if ( scroll >= shrinkHeader ) {
-           $('.header').addClass('shrink');
+
+/* 	Detect "transform-style: preserve-3d" support, or update csstransforms3d for IE10 ? #762
+	https://github.com/Modernizr/Modernizr/issues/762 */
+(function getPerspective(){
+  var element = document.createElement('p'),
+      html = document.getElementsByTagName('html')[0],
+      body = document.getElementsByTagName('body')[0],
+      propertys = {
+        'webkitTransformStyle':'-webkit-transform-style',
+        'MozTransformStyle':'-moz-transform-style',
+        'msTransformStyle':'-ms-transform-style',
+        'transformStyle':'transform-style'
+      };
+
+    body.insertBefore(element, null);
+
+    for (var i in propertys) {
+        if (element.style[i] !== undefined) {
+            element.style[i] = "preserve-3d";
         }
-        else {
-            $('.header').removeClass('shrink');
-        }
-  });
-function getCurrentScroll() {
-    return window.pageYOffset || document.documentElement.scrollTop;
     }
-});
+
+    var st = window.getComputedStyle(element, null),
+        transform = st.getPropertyValue("-webkit-transform-style") ||
+                    st.getPropertyValue("-moz-transform-style") ||
+                    st.getPropertyValue("-ms-transform-style") ||
+                    st.getPropertyValue("transform-style");
+
+    if(transform!=='preserve-3d'){
+      html.className += ' no-preserve-3d';
+    } else {
+    	html.className += ' preserve-3d';
+    }
+    document.body.removeChild(element);
+
+})();
