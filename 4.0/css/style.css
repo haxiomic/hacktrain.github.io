@@ -11,7 +11,8 @@ html, body {
   height:100%;
   margin:0;
   padding:0;
-  background-color: #0033ff;
+  background-color:#0033ff;
+
 }
 
 
@@ -20,6 +21,36 @@ a {
   text-decoration: none;
 }
 
+#top, #bottom, #left, #right {
+  background: #0033ff;
+  position: fixed;
+  z-index:10;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+@media 
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+  #top, #bottom, #left, #right { display: none; }
+}
 /* -------------------------------- 
 
 Main Components 
@@ -112,7 +143,7 @@ Main Components
   top:21%;
   left:39%;
   margin-left: 42.5px;
-  margin-top: 400px;
+  margin-top: 420px;
 }
 .cd-floating-background a:nth-child(4) {
   -webkit-transform: translateZ(400px);
@@ -122,7 +153,7 @@ Main Components
   top:21%;
   left:39%;
   margin-left: 192.5px;
-  margin-top: 400px;
+  margin-top: 420px;
 }
 
 .cd-floating-background a:nth-child(4):hover{
