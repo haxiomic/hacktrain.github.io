@@ -251,6 +251,14 @@ hr.small {
     background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('../img/speakers/peter.png');
 }
 
+.speaker-11{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1)), url('../img/speakers/matt.png');
+}
+
+.speaker-12{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1)), url('../img/speakers/steven.png');
+}
+
 .cover-photo{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -303,7 +311,7 @@ hr.small {
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
     background: rgba(170,170,170,1);
     background: -moz-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(238,238,238,1) 15%, rgba(238,238,238,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(170,170,170,1)), color-stop(15%, rgba(238,238,238,1)), color-stop(100%, rgba(238,238,238,1)));
@@ -699,8 +707,7 @@ hr.small {
 .social-media h2{
     font-size: 42px;
     color: #ffcc00;
-    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-    letter-spacing: 3px;
+    font-family: 'SFPixelate', Georgia, sans-serif;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
@@ -736,20 +743,21 @@ hr.small {
 }
 
 .delegates h1{
-    font-size: 32px;
-    color: #0033ff;
-    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
-    border: 5px solid #0033ff;
-    -webkit-box-shadow: 7px 7px 0px 1px rgba(0,51,255,1);
-    -moz-box-shadow: 7px 7px 0px 1px rgba(0,51,255,1);
-    padding:15px;
-    letter-spacing: 2px;
+  font-size: 32px;
+  color: #0033ff;
+  font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+  border: 7px solid #0033ff;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,51,255,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,51,255,1);
+  box-shadow: 10px 10px 0px 0px rgba(0,51,255,1);
+  padding:15px;
+  letter-spacing: 2px;
 }
 
 .delegates p{
-    font-size:15px;
-    font-family: 'Proxima Nova', Georgia, sans-serif;
-    margin-top:15px;
+    font-size:18px;
+    font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+    margin-bottom:20px;
 }
 
 .delegates span{
@@ -757,10 +765,16 @@ hr.small {
   font-size:16px;
 }
 .delegates img{
-  border: 5px solid white;
-  margin: 25px 0 0 15px;
-  width:130px;
-
+  background-color: white;
+  color:black;
+  font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+  border: 10px solid #eeeeee;
+  padding:10px 10px;
+  height:350px;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(238,238,238,1);
+  box-shadow: 10px 10px 0px 0px rgba(238,238,238,1);
+  margin:50px 10px 30px 10px;
 }
 
 /*location*/
