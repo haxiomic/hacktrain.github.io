@@ -241,10 +241,10 @@ hr.small {
     background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/marius.png');
 }
 .speaker-8{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/anish.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgb(0, 0, 0)), url('../img/speakers/adam.png');
 }
 .speaker-9{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0)), url('../img/speakers/josh.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 45%, rgb(0, 0, 0)), url('../img/speakers/josh.png');
 }
 
 .speaker-10{
@@ -256,8 +256,36 @@ hr.small {
 }
 
 .speaker-12{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1)), url('../img/speakers/steven.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/steven.png');
 }
+
+.speaker-13{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1)), url('../img/speakers/paulw.png');
+}
+
+.speaker-14{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/colin.png');
+}
+
+.speaker-15{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/pauls.png');
+}
+
+.speaker-16{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/apu.png');
+}
+
+.speaker-17{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/jamesb.png');
+}
+
+.speaker-18{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/steve.png');
+}
+.speaker-19{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('../img/speakers/rikesh.png');
+}
+
 
 .cover-photo{
   -webkit-background-size: cover;
