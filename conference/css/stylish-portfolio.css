@@ -368,9 +368,16 @@ hr.small {
 }
 
 @media only screen and (max-width: 767px) {
+  .portfolio .row{
+    margin:0 3px 0 3px;
+  }
   .portfolio p{
     padding:10px;
     margin-top:-60px !important;
+  }
+
+  .portfolio h1{
+    font-size:28px!important;
   }
 
   .portfolio h2{
@@ -494,6 +501,28 @@ hr.small {
     background-size: cover;
 }
 
+@media only screen and (max-width: 767px) {
+  .schedule .row h2,h3{
+    margin:0 10px 0 10px;
+  }
+
+  .schedule p{
+    margin:5px 10px 5px 10px!important;
+  }
+
+  .schedule h2{
+    padding-bottom:15px!important;
+  }
+
+  .schedule h4{
+    margin:5px 10px 5px 10px!important;
+    padding-left:15px!important;
+  }
+
+  .schedule span{
+    margin:0px 30px 0px 10px!important;
+  }
+}
 .schedule h1{
     font-size: 32px;
     color: #0033ff;
@@ -766,6 +795,16 @@ hr.small {
     background-size: cover;
 }
 
+@media only screen and (max-width: 767px) {
+  .social-media .row{
+    margin:0 1px 0 1px;
+  }
+
+  .social-media iframe{
+    height:220px;
+  }
+}
+
 .social-media h1{
     font-size: 32px;
     color: white;
@@ -851,6 +890,18 @@ hr.small {
   margin:50px 10px 30px 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .delegates img{
+    margin: 10px 0 35px -7px!important;
+  }
+  .delegates h1{
+    margin:30px 0 50px -7px!important;
+  }
+  .delegates p{
+    margin-top:-10px;
+  }
+}
+
 /*location*/
 
 .location{
@@ -860,6 +911,12 @@ hr.small {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .location .row{
+    margin:0 2px 0 2px;
+  }
 }
 
 .location h1{
