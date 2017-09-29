@@ -43,32 +43,38 @@
 </head>
 
 <body>
-    <!-- Navigation
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper" style="z-index:10;">
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg page-scroll"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close").click();>Start Bootstrap</a>
-            </li>
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" style="margin-top:0px;"><i class="fa fa-times"></i></a>
             <li>
                 <a href="#top" onclick=$( "#menu-close").click();>Home</a>
             </li>
             <li>
-                <a href="#about" onclick=$( "#menu-close").click();>About</a>
+                <a href="#portfolio" onclick=$( "#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$( "#menu-close").click();>Services</a>
+                <a href="#speakers" onclick=$( "#menu-close").click();>Speakers & Moderators</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$( "#menu-close").click();>Portfolio</a>
+                <a href="#schedule" onclick=$( "#menu-close").click();>Schedule</a>
             </li>
             <li>
-                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+                <a href="#sponsors" onclick=$( "#menu-close").click();>Sponsors & Partners</a>
+            </li>
+            <li>
+                <a href="#media" onclick=$( "#menu-close").click();>Media</a>
+            </li>
+            <li>
+                <a href="#tickets" onclick=$( "#menu-close").click();>Tickets</a>
+            </li>
+            <li>
+                <a href="#delegates" onclick=$( "#menu-close").click();>Delegate List</a>
             </li>
         </ul>
     </nav>
-     -->
+    
 
     <!-- Header -->
     <header class="full cover" id="top">
@@ -151,7 +157,7 @@
 
 
     <!-- Callout -->
-    <aside class="callout">
+    <aside class="callout" id="speakers">
         <div class="text-vertical-center">
             <div class="container container-border">
                 <div class="row">
@@ -487,7 +493,7 @@
     </section>
 
     <!-- Sponsors & Partners -->
-    <section id="portfolio" class="portfolio">
+    <section id="sponsors" class="portfolio">
         <div class="row">
             <div class="col-lg-4 mx-auto">
                 <h4 class="text-center mx-auto">SPONSORS & PARTNERS</h4>
@@ -559,7 +565,7 @@
     </section>
 
     <!-- Social Media -->
-    <aside class="social-media">
+    <aside class="social-media" id="media">
             <div class="row">
                 <div class="col-lg-4 mx-auto text-center">
                     <h1>MEDIA</h1>
@@ -580,7 +586,7 @@
     </aside>
 
     <!--Tickets -->
-    <aside class="ticket">
+    <aside class="ticket" id="tickets">
         <div class="row">
             <div class="col-lg-5 mx-auto">
                 <h1 class="text-center mx-auto">TICKETS</h1>
